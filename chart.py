@@ -1,4 +1,5 @@
 import plotly.graph_objects as go
+import plotly.offline as pyo
 
 def save_chart_to_html():
     x_data = [1, 2, 3, 4, 5]
@@ -15,6 +16,6 @@ def save_chart_to_html():
                         yaxis_title='Y-axis'
     )
 
-    fig.write_html("file.html")
+    pyo.plot(fig, filename='line_chart.html')
 
 save_chart_to_html()
