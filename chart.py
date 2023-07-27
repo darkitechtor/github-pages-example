@@ -15,7 +15,7 @@ def save_chart_to_html():
                         xaxis_title='X-axis',
                         yaxis_title='Y-axis'
     )
-# it's better to name file "index.html" so it will be accessible as main page
+# it's better to name the file "index.html" so it will be accessible as the main page
 # without a file name specification
     pyo.plot(fig, filename='index.html')
 
